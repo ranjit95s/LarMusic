@@ -13,7 +13,7 @@ Laravel Project Task
 ![adminlog3](https://user-images.githubusercontent.com/74762032/209561717-d87682a1-e602-4b4d-ad88-5552126ccb21.png)
 
 ## `Singal Event Page UI`
-- View Every Event in detail [Note : Edit and Delete functionality available for admin]
+- View Every Event in detail [Note : Edit and Delete functionality visible for admin]
 ![oneEvent4](https://user-images.githubusercontent.com/74762032/209561712-2e22180f-3f65-4bc7-8a5d-7e4d6014b2d9.png)
 
 ## `Edit Event Page UI`
