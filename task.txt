@@ -1,0 +1,69 @@
+Project scope:
+Develop a web application to search and discover upcoming music events.
+Users should be able to see the latest added events on the homepage.
+They can search events by name. They can filter events by specific Artist, Date and Genre.
+
+Admin panel
+- Login (Use seeder create admin login)
+- Genre
+    - List
+    - Add
+        - Name
+    - Edit
+    - Delete
+    Example Genres : Rock, Pop, Jazz, Blues, Traditional, EDM
+
+- Artist
+    - List
+    - Add
+        - Name
+    - Edit
+    - Delete
+    Example Artists : Raghu Dixit, Nucleya, Ritviz, Nirali Kartik
+
+- Venue
+    - List
+    - Add
+        - Name
+        - Address
+        - Contact Number
+    - Edit
+    - Delete
+    Example Venues : Asiatic library steps, JIO Garden, Grease Monkey
+
+- Events
+    - Add
+        - Title
+        - Genre (From Genre master)
+        - Image
+        - Short description
+        - Amount
+        - Date
+        - Venue
+    - Edit
+    - Delete
+    Example Event Name : Raghu Dixit Live at Grease Monkey
+
+Home page
+- Show list of 20 events
+- On scroll down list next 20 events (Or a normal pagination built in Laravel)
+- Build a search functionality to search an event by Name
+- Build Filter functionality to filter events by
+    - Artist
+    - Genre
+    - Date
+    - Venue
+
+Laravel features that needs to be used in the project
+This will help us understand your efficiency in using Laravel
+    - Database migration
+    - Seeder
+    - Eloquent
+    - Laravel in build authentication
+    - Laravel pagination
+—
+Submit for review
+Please work through this task. After completing it, Host it on Github.com / gitlab.com as a public
+repository and share the link with us.
+
+C:\xampp\htdocs\project-laravel> php artisan serve --host=project-laravel.test --port=8080

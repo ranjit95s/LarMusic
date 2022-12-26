@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>singal page</title>
+    <style>
+        body {
+            background-color: #0c3438;
+            color: aliceblue;
+        }
+
+        .imageTag img {
+            width: 28rem;
+            height: 25rem;
+            border-radius: 15px;
+        }
+
+        .title span {
+            padding: 0px 6px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: red;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title .date {
+            width: fit-content;
+            text-align: center;
+        }
+
+        .title .date h3 {
+            padding: 10px 20px 25px 20px;
+            margin: 0;
+            top: 2px;
+            position: relative;
+            border-radius: 45%;
+            background: rgb(255, 0, 106);
+        }
+
+        .date h3 span {
+            position: absolute;
+            left: 30%;
+            top: 65%;
+            background: rgb(255, 0, 106);
+            margin-top: 0;
+            font-size: 10px;
+        }
+
+        .gerne ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+
+        .gerne ul a {
+            border: none;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+
+        .dec {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+        }
+
+        .w {
+            background: #5EC098;
+            width: 64px;
+            height: 64px;
+            float: left;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        .n {
+            position: absolute;
+            margin: 8px;
+            background: rgba(0, 0, 0, .5);
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+        }
+        .inone{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Music</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Admin Panel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="search">
+        <nav class="w-100 navbar navbar-light">
+            <div class="container-fluid">
+                <form class="d-flex mt-2 w-100 p-3">
+                    <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn imp btn-outline-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <section id="event">
+        <div class="container mainEvent w-100 d-flex">
+            <div class="first w-50">
+                <div class="imageTag">
+                    <img src="./one-piece-film-red_534x.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="second w-50">
+                <div class="title">
+                    <div class="col">
+                        <h2>One Piece <span>Live</span></h2>
+                        <div class="gerne m-0 p-0">
+                            <ul>
+                                <a href="#">Rock</a>
+                                <a href="#">Pop</a>
+                                <a href="#">Jazz</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <h3>24<br><span>July</span></h3>
+                    </div>
+                </div>
+
+                <div class="dec">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates ullam fugiat maxime
+                        ex corporis id temporibus maiores optio beatae!</p>
+                </div>
+                <div class="sectwo d-flex justify-content-between w-100">
+                    <div class="venue">
+                        <h6 class="text-muted">At</h6>
+                        <h2>JIO Gardne</h2>
+                    </div>
+                    <div class="amount">
+                        <h6 class="text-muted">Amount</h6>
+                        <h2>$ 12,000</h2>
+                    </div>
+                </div>
+                <div class="text-muted">
+                    Time remain
+                </div>
+                <div class="inone">
+                    <div class="w">
+                        <div class="n" id="days">
+                        </div>
+                    </div>
+                    <div class="w">
+                        <div class="n" id="hours">
+                        </div>
+                    </div>
+                    <div class="w">
+                        <div class="n" id="minutes">
+    
+                        </div>
+                    </div>
+                    <div class="w">
+                        <div class="n" id="seconds">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="admin mt-3 py-3">
+                    <button type="button" class="btn btn-warning">Edit</button>
+                    <button type="button" class="btn mx-3 btn-danger">Delete</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js"></script>
+    </div>
+</body>
+<script>
+    function getRemaining(ts) {
+        const now = moment();
+        const then = moment(ts);
+        const diff = then.diff(now);
+        if(diff < 0){
+            return ['0','0','0','0'];
+        }
+        const dur = moment.duration(diff);
+
+        let parts = [];
+        for (const part of ['days', 'hours', 'minutes', 'seconds']) {
+            const d = dur[part]();
+            dur.subtract(moment.duration(d, part));
+            parts.push(d);
+        }
+        return parts;
+    }
+
+    const ts = '2022-12-30';
+    const rem = getRemaining(ts);
+
+    // console.log(rem)
+
+    setInterval(() => {
+        const rem = getRemaining(ts);
+        updateDom(rem)
+    }, 100)
+    
+    function updateDom(vals) {
+        let i = 0;
+        for (const part of ['days', 'hours', 'minutes', 'seconds']) {
+            const ele = document.getElementById(part);
+            ele.innerText = vals[i++];
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

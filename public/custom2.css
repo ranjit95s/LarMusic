@@ -1,0 +1,91 @@
+body {
+    background-color: #0c3438;
+    color: aliceblue;
+}
+
+.imageTag img {
+    width: 28rem;
+    height: 25rem;
+    border-radius: 15px;
+}
+
+.title span {
+    padding: 0px 6px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: red;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .date {
+    width: fit-content;
+    text-align: center;
+}
+
+.title .date h3 {
+    padding: 10px 20px 25px 20px;
+    margin: 0;
+    top: 2px;
+    position: relative;
+    border-radius: 45%;
+    background: rgb(255, 0, 106);
+}
+
+.date h3 span {
+    position: absolute;
+    left: 30%;
+    top: 65%;
+    background: rgb(255, 0, 106);
+    margin-top: 0;
+    font-size: 10px;
+}
+
+.gerne ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.gerne ul a {
+    border: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.dec {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.w {
+    background: #5EC098;
+    width: 64px;
+    height: 64px;
+    float: left;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.n {
+    position: absolute;
+    margin: 8px;
+    background: rgba(0, 0, 0, .5);
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.inone{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
